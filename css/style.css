@@ -78,10 +78,9 @@ footer{
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
-    align-content: center;   
 }
 
 .card {
@@ -93,6 +92,7 @@ footer{
   /*Take a look at flex-basis*/
   display: flex;
   flex-basis: 400px;
+  flex-flow: column wrap;
 
 }
 
@@ -142,7 +142,6 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 
 }
@@ -158,7 +157,10 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
-  align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .nav_links{
@@ -181,13 +183,18 @@ header{
 }
 
 @media screen and (min-width: 850px){
-
+  .pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   /* Cards! */
   .card {
     /*Your  code here again.*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-basis: 225px;
+
   }
 
   .card_big{
@@ -199,6 +206,9 @@ header{
   header{
     /*Your code here again.*/  
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav_links{
@@ -221,7 +231,6 @@ header{
   .pricing{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: flex-start;
 
   }
@@ -231,8 +240,13 @@ header{
     background-image: none;
   }
 
+  h2.gallery{
+    display: none;
+  }
+
   .gallery{
     /*gallery class and id should not be displayed*/ 
+    display: none;
   }
 }
 
