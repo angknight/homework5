@@ -78,8 +78,9 @@ footer{
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
 }
 
@@ -186,6 +187,7 @@ header{
   .pricing{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
   /* Cards! */
